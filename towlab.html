@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Towlab Hotel & Suites — a refined hospitality experience in Akure, Ondo State."
+    >
+
+    <title>Towlab Hotel & Suites | Akure</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="towlab.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         CONCEPT NOTICE
+    ========================================== -->
+
+    <div class="concept-notice">
+        Independent website redesign concept — created by Ajewole-CODER
+    </div>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="header" id="header">
+
+        <a href="#top" class="logo">
+            <span>TOWLAB</span>
+            <small>HOTEL & SUITES</small>
+        </a>
+
+        <nav class="nav" id="nav">
+
+            <a href="#about">About</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#experience">Experience</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+
+            <a href="#booking" class="nav-book">
+                Book Your Stay
+            </a>
+
+        </nav>
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Open navigation"
+        >
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <main id="top">
+
+        <!-- =========================================
+             HERO
+        ========================================== -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    Hospitality in Akure
+                </div>
+
+                <h1>
+                    Your stay,
+                    <em>elevated.</em>
+                </h1>
+
+                <p>
+                    Discover comfortable accommodation,
+                    thoughtful hospitality and a convenient
+                    location along the Owo/Ilesha Expressway.
+                </p>
+
+                <div class="hero-rating">
+
+                    <div class="stars">
+                        ★ ★ ★ ★
+                    </div>
+
+                    <span>
+                        3.9 / 5
+                    </span>
+
+                    <span class="rating-divider">
+                        |
+                    </span>
+
+                    <span>
+                        459 Google reviews
+                    </span>
+
+                </div>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#booking"
+                        class="btn btn-primary"
+                    >
+                        Make an enquiry
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a
+                        href="#rooms"
+                        class="btn btn-outline"
+                    >
+                        Explore rooms
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                Scroll
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             BOOKING
+        ========================================== -->
+
+        <section
+            class="booking-wrap"
+            id="booking"
+        >
+
+            <div class="booking-bar reveal">
+
+                <div class="booking-item">
+
+                    <span class="booking-label">
+                        Check In
+                    </span>
+
+                    <input
+                        type="date"
+                        id="checkIn"
+                    >
+
+                </div>
+
+
+                <div class="booking-divider"></div>
+
+
+                <div class="booking-item">
+
+                    <span class="booking-label">
+                        Check Out
+                    </span>
+
+                    <input
+                        type="date"
+                        id="checkOut"
+                    >
+
+                </div>
+
+
+                <div class="booking-divider"></div>
+
+
+                <div class="booking-item guests-control">
+
+                    <span class="booking-label">
+                        Guests
+                    </span>
+
+                    <button
+                        class="guest-selector"
+                        id="guestSelector"
+                    >
+
+                        <span id="guestCount">
+                            2 Guests
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </button>
+
+
+                    <div
+                        class="guest-dropdown"
+                        id="guestDropdown"
+                    >
+
+                        <div class="guest-row">
+
+                            <div>
+                                <strong>Adults</strong>
+                                <small>13 years and above</small>
+                            </div>
+
+                            <div class="counter">
+
+                                <button data-action="adult-minus">
+                                    −
+                                </button>
+
+                                <span id="adultCount">
+                                    2
+                                </span>
+
+                                <button data-action="adult-plus">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="guest-row">
+
+                            <div>
+                                <strong>Children</strong>
+                                <small>2–12 years</small>
+                            </div>
+
+                            <div class="counter">
+
+                                <button data-action="child-minus">
+                                    −
+                                </button>
+
+                                <span id="childCount">
+                                    0
+                                </span>
+
+                                <button data-action="child-plus">
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="availability-btn"
+                    id="availabilityBtn"
+                >
+                    Check Availability
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             ABOUT
+        ========================================== -->
+
+        <section
+            class="section"
+            id="about"
+        >
+
+            <div class="intro">
+
+                <div class="intro-image reveal">
+
+                    <div class="image-card">
+                        <div class="luxury-image"></div>
+                    </div>
+
+                    <div class="experience-badge">
+
+                        <strong>3.9</strong>
+
+                        <span>
+                            Google Rating
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="intro-content reveal">
+
+                    <div class="section-label">
+                        The Towlab experience
+                    </div>
+
+                    <h2>
+                        More than a room.
+                        <span>A place to settle in.</span>
+                    </h2>
+
+                    <p>
+                        Located along the Owo/Ilesha Expressway
+                        in Akure, Towlab Hotel & Suites offers
+                        a convenient base for both business and
+                        leisure travellers.
+                    </p>
+
+                    <p>
+                        From comfortable accommodation to
+                        hospitality services and meeting spaces,
+                        the experience is designed around the
+                        practical needs of today's guest.
+                    </p>
+
+                    <div class="about-stats">
+
+                        <div>
+                            <strong>459+</strong>
+                            <span>Google reviews</span>
+                        </div>
+
+                        <div>
+                            <strong>3.9/5</strong>
+                            <span>Guest rating</span>
+                        </div>
+
+                        <div>
+                            <strong>24/7</strong>
+                            <span>Front desk</span>
+                        </div>
+
+                    </div>
+
+                    <a
+                        href="#experience"
+                        class="text-link"
+                    >
+                        Discover the experience
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             WHY TOWLAB
+        ========================================== -->
+
+        <section class="why-section">
+
+            <div class="why-inner">
+
+                <div class="section-heading light reveal">
+
+                    <div>
+
+                        <div class="section-label">
+                            Why Towlab
+                        </div>
+
+                        <h2>
+                            Everything you need,
+                            <span>in one place.</span>
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        A practical hospitality experience
+                        built around comfort, convenience
+                        and accessibility in Akure.
+                    </p>
+
+                </div>
+
+
+                <div class="why-grid">
+
+                    <article class="why-card reveal">
+
+                        <span class="why-number">
+                            01
+                        </span>
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <h3>
+                            Convenient Location
+                        </h3>
+
+                        <p>
+                            Positioned along the Owo/Ilesha
+                            Expressway, beside the NNPC
+                            Filling Station and opposite
+                            the Industrial Park.
+                        </p>
+
+                    </article>
+
+
+                    <article class="why-card reveal">
+
+                        <span class="why-number">
+                            02
+                        </span>
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <h3>
+                            24/7 Front Desk
+                        </h3>
+
+                        <p>
+                            Hospitality support is available
+                            around the clock for guests.
+                        </p>
+
+                    </article>
+
+
+                    <article class="why-card reveal">
+
+                        <span class="why-number">
+                            03
+                        </span>
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <h3>
+                            Business Ready
+                        </h3>
+
+                        <p>
+                            Meeting facilities make the
+                            property suitable for business
+                            travellers and gatherings.
+                        </p>
+
+                    </article>
+
+
+                    <article class="why-card reveal">
+
+                        <span class="why-number">
+                            04
+                        </span>
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <h3>
+                            Guest Rated
+                        </h3>
+
+                        <p>
+                            Hundreds of Google reviews provide
+                            prospective guests with social proof
+                            before they book.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             ROOMS
+        ========================================== -->
+
+        <section
+            class="section rooms"
+            id="rooms"
+        >
+
+            <div class="section-heading reveal">
+
+                <div>
+
+                    <div class="section-label">
+                        Stay your way
+                    </div>
+
+                    <h2>
+                        Rooms & <span>Suites</span>
+                    </h2>
+
+                </div>
+
+                <p>
+                    Comfortable spaces designed to give
+                    every guest a place to relax, recharge
+                    and settle in.
+                </p>
+
+            </div>
+
+
+            <div class="rooms-grid">
+
+                <article class="room-card reveal">
+
+                    <div class="room-image room-one">
+
+                        <span class="room-tag">
+                            Comfortable
+                        </span>
+
+                    </div>
+
+                    <div class="room-info">
+
+                        <div class="room-title">
+
+                            <h3>
+                                Deluxe Room
+                            </h3>
+
+                            <span>
+                                01
+                            </span>
+
+                        </div>
+
+                        <p>
+                            A comfortable private retreat
+                            for guests seeking a practical
+                            and relaxing stay.
+                        </p>
+
+                        <div class="room-features">
+
+                            <span>
+                                Air Conditioning
+                            </span>
+
+                            <span>
+                                Wi-Fi
+                            </span>
+
+                            <span>
+                                Private Bath
+                            </span>
+
+                        </div>
+
+                        <a
+                            href="#booking"
+                            class="room-link"
+                        >
+                            Enquire
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="room-card reveal">
+
+                    <div class="room-image room-two">
+
+                        <span class="room-tag">
+                            Premium
+                        </span>
+
+                    </div>
+
+                    <div class="room-info">
+
+                        <div class="room-title">
+
+                            <h3>
+                                Executive Room
+                            </h3>
+
+                            <span>
+                                02
+                            </span>
+
+                        </div>
+
+                        <p>
+                            A more spacious environment
+                            for guests looking for additional
+                            comfort during their stay.
+                        </p>
+
+                        <div class="room-features">
+
+                            <span>
+                                Air Conditioning
+                            </span>
+
+                            <span>
+                                Wi-Fi
+                            </span>
+
+                            <span>
+                                Sitting Area
+                            </span>
+
+                        </div>
+
+                        <a
+                            href="#booking"
+                            class="room-link"
+                        >
+                            Enquire
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="room-card reveal">
+
+                    <div class="room-image room-three">
+
+                        <span class="room-tag">
+                            Signature
+                        </span>
+
+                    </div>
+
+                    <div class="room-info">
+
+                        <div class="room-title">
+
+                            <h3>
+                                Suite
+                            </h3>
+
+                            <span>
+                                03
+                            </span>
+
+                        </div>
+
+                        <p>
+                            A premium accommodation option
+                            for guests who want more room
+                            during their stay.
+                        </p>
+
+                        <div class="room-features">
+
+                            <span>
+                                Air Conditioning
+                            </span>
+
+                            <span>
+                                Wi-Fi
+                            </span>
+
+                            <span>
+                                Living Area
+                            </span>
+
+                        </div>
+
+                        <a
+                            href="#booking"
+                            class="room-link"
+                        >
+                            Enquire
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="room-note reveal">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                <span>
+                    Room categories, amenities and rates
+                    should be confirmed directly with Towlab
+                    before publication.
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             EXPERIENCE / AMENITIES
+        ========================================== -->
+
+        <section
+            class="section"
+            id="experience"
+        >
+
+            <div class="experience">
+
+                <div class="experience-content reveal">
+
+                    <div class="section-label">
+                        Designed around you
+                    </div>
+
+                    <h2>
+                        Comfort,
+                        <span>without the fuss.</span>
+                    </h2>
+
+                    <p>
+                        Whether you're travelling for work,
+                        visiting family or simply taking time
+                        away, Towlab provides the essential
+                        hospitality services you need for
+                        a comfortable stay.
+                    </p>
+
+                    <a
+                        href="#contact"
+                        class="text-link"
+                    >
+                        Plan your stay
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="amenities-grid reveal">
+
+                    <div class="amenity">
+
+                        <i class="fa-solid fa-wifi"></i>
+
+                        <h3>
+                            Wi-Fi
+                        </h3>
+
+                        <p>
+                            Stay connected throughout
+                            your visit.
+                        </p>
+
+                    </div>
+
+
+                    <div class="amenity">
+
+                        <i class="fa-solid fa-snowflake"></i>
+
+                        <h3>
+                            Air Conditioning
+                        </h3>
+
+                        <p>
+                            Comfortable climate-controlled
+                            accommodation.
+                        </p>
+
+                    </div>
+
+
+                    <div class="amenity">
+
+                        <i class="fa-solid fa-utensils"></i>
+
+                        <h3>
+                            Breakfast
+                        </h3>
+
+                        <p>
+                            Breakfast is listed among the
+                            property's popular amenities.
+                        </p>
+
+                    </div>
+
+
+                    <div class="amenity">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <h3>
+                            Meeting Rooms
+                        </h3>
+
+                        <p>
+                            Facilities suitable for
+                            meetings and business needs.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             GALLERY
+        ========================================== -->
+
+        <section
+            class="section gallery"
+            id="gallery"
+        >
+
+            <div class="section-heading reveal">
+
+                <div>
+
+                    <div class="section-label">
+                        A glimpse inside
+                    </div>
+
+                    <h2>
+                        Experience <span>Towlab</span>
+                    </h2>
+
+                </div>
+
+                <p>
+                    A visual presentation of the property,
+                    accommodation and hospitality experience.
+                </p>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item gallery-large reveal">
+                    <div class="gallery-placeholder gallery-one"></div>
+                </div>
+
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder gallery-two"></div>
+                </div>
+
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder gallery-three"></div>
+                </div>
+
+                <div class="gallery-item gallery-wide reveal">
+                    <div class="gallery-placeholder gallery-four"></div>
+                </div>
+
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder gallery-five"></div>
+                </div>
+
+            </div>
+
+
+            <p class="gallery-note">
+                <i class="fa-solid fa-camera"></i>
+                Concept imagery — replace with approved Towlab
+                property photography before launch.
+            </p>
+
+        </section>
+
+
+        <!-- =========================================
+             REVIEWS
+        ========================================== -->
+
+        <section
+            class="section reviews"
+            id="reviews"
+        >
+
+            <div class="reviews-header reveal">
+
+                <div class="section-label">
+                    Guest feedback
+                </div>
+
+                <h2>
+                    What guests are
+                    <span>saying.</span>
+                </h2>
+
+                <div class="review-summary">
+
+                    <strong>
+                        3.9
+                    </strong>
+
+                    <div>
+
+                        <div class="stars dark">
+                            ★ ★ ★ ★
+                        </div>
+
+                        <span>
+                            Based on 459 Google reviews
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="review-grid">
+
+                <article class="review-card reveal">
+
+                    <div class="quote-mark">
+                        “
+                    </div>
+
+                    <p>
+                        Located on the expressway, with
+                        nice ambience, a range of affordable
+                        rooms and good customer service.
+                    </p>
+
+                    <div class="review-author">
+                        Google Guest Review
+                    </div>
+
+                </article>
+
+
+                <article class="review-card reveal">
+
+                    <div class="quote-mark">
+                        “
+                    </div>
+
+                    <p>
+                        Nice rooms and courteous staff in
+                        a serene environment.
+                    </p>
+
+                    <div class="review-author">
+                        Google Guest Review
+                    </div>
+
+                </article>
+
+
+                <article class="review-card reveal">
+
+                    <div class="quote-mark">
+                        “
+                    </div>
+
+                    <p>
+                        Excellent service, pristine environment
+                        and delicious food.
+                    </p>
+
+                    <div class="review-author">
+                        Google Guest Review
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <p class="review-note">
+                Review excerpts are adapted from publicly
+                visible guest feedback and should be replaced
+                with approved quotations before commercial launch.
+            </p>
+
+        </section>
+
+
+        <!-- =========================================
+             CTA
+        ========================================== -->
+
+        <section class="cta">
+
+            <div class="cta-content reveal">
+
+                <div class="eyebrow">
+                    Your next stay
+                </div>
+
+                <h2>
+                    Come for the stay.
+                    <em>Stay for the feeling.</em>
+                </h2>
+
+                <p>
+                    Ready to plan your visit to Towlab?
+                    Contact the hotel directly to enquire
+                    about availability and rates.
+                </p>
+
+                <a
+                    href="tel:+2348155246383"
+                    class="btn btn-primary"
+                >
+                    Call Towlab
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CONTACT
+        ========================================== -->
+
+        <section
+            class="section"
+            id="contact"
+        >
+
+            <div class="contact">
+
+                <div class="contact-content reveal">
+
+                    <div class="section-label">
+                        Get in touch
+                    </div>
+
+                    <h2>
+                        Let's plan
+                        <span>your stay.</span>
+                    </h2>
+
+                    <p>
+                        For availability, room rates,
+                        reservations or general enquiries,
+                        contact Towlab Hotel & Suites directly.
+                    </p>
+
+
+                    <div class="contact-details">
+
+                        <a href="tel:+2348155246383">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            +234 815 524 6383
+
+                        </a>
+
+
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=Towlab+Hotel+%26+Suites+Akure"
+                            target="_blank"
+                        >
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Km 3 Along Owo/Ilesha Express Way,
+                            Akure, Ondo State
+
+                        </a>
+
+
+                        <a
+                            href="https://wa.me/2348155246383"
+                            target="_blank"
+                        >
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            Enquire on WhatsApp
+
+                        </a>
+
+                    </div>
+
+
+                    <a
+                        href="tel:+2348155246383"
+                        class="contact-button"
+                    >
+                        Call to enquire
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="map-box reveal">
+
+                    <div class="map-content">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <h3>
+                            Find Towlab
+                        </h3>
+
+                        <p>
+                            Km 3 Along Owo/Ilesha Express Way,
+                            Akure
+                        </p>
+
+                        <a
+                            href="https://www.google.com/maps/search/?api=1&query=Towlab+Hotel+%26+Suites+Akure"
+                            target="_blank"
+                        >
+                            Get directions
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#top" class="logo">
+
+                    <span>TOWLAB</span>
+
+                    <small>
+                        HOTEL & SUITES
+                    </small>
+
+                </a>
+
+                <p>
+                    A refined hospitality concept designed
+                    to make discovering, enquiring and
+                    planning a stay simpler.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#rooms">
+                    Rooms & Suites
+                </a>
+
+                <a href="#experience">
+                    Experience
+                </a>
+
+                <a href="#gallery">
+                    Gallery
+                </a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>
+                    Contact
+                </h4>
+
+                <a href="tel:+2348155246383">
+                    Call
+                </a>
+
+                <a href="#booking">
+                    Make an enquiry
+                </a>
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Towlab+Hotel+%26+Suites+Akure"
+                    target="_blank"
+                >
+                    Directions
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © <strong id="year"></strong>
+                Towlab Hotel & Suites.
+            </span>
+
+            <span>
+                Independent redesign concept.
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- FLOATING WHATSAPP -->
+
+    <a
+        href="https://wa.me/2348155246383"
+        class="floating-contact"
+        target="_blank"
+        aria-label="Contact Towlab"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+
+    <script src="towlab.js"></script>
+
+</body>
+</html>
